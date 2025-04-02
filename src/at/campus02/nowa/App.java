@@ -29,6 +29,7 @@ public class App {
             readUserInput();
             updateState();
             printState();
+            askForScale();
         }
     }
 
@@ -88,5 +89,17 @@ public class App {
                 break;
             }
         } while (true);
+    }
+
+    private void askForScale() {
+        output.println("Möchten Sie die Grafik skalieren? Geben Sie den Skalierungsfaktor ein (1 für keine Skalierung, 2 oder mehr für Skalierung):");
+        int scaleFactor = input.nextInt();
+        if (scaleFactor > 1) {
+            figure.scale(scaleFactor); // Применяем масштабирование
+            output.println("Skalierte Grafik:");
+            output.println(figure);
+        } else {
+            output.println("Keine Skalierung angewendet.");
+        }
     }
 }
