@@ -34,7 +34,14 @@ public class App {
     }
 
     private void initialize() {
-        //TODO: Initialisierungen hier durchführen
+        output.println("Willkommen zu dem Figuren-Programm!");
+        output.println("Wählen Sie eine der folgenden Figuren aus, um sie anzuzeigen:");
+        output.println("1 - H");
+        output.println("2 - I");
+        output.println("3 - L");
+        output.println("4 - Minus");
+        output.println("5 - O");
+        output.println("6 - O2");
 
 
     }
